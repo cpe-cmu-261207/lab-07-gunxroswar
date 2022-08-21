@@ -15,7 +15,6 @@ export default function Home() {
   useEffect(() => {
     const todoStr = localStorage.getItem("react-todos");
     setTodos(JSON.parse(todoStr));
-    console.log(todoStr);
   }, []);
 
   //14. save todos
@@ -96,7 +95,6 @@ export default function Home() {
             }
           }}
         />
-        {console.log(todos)}
         {/* Todos */}
         {todos.map((todo, i) => (
           <Todo
